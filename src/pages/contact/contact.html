@@ -8,10 +8,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+    <ion-list-header>TOP 10</ion-list-header>
+    
+    <ion-item *ngFor="let person of persons">
+      {{ person.name }}
+      <ion-badge item-end>{{ person.pontuation }}</ion-badge>
     </ion-item>
   </ion-list>
 </ion-content>
